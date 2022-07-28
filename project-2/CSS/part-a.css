@@ -1,0 +1,821 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#navbar{
+    display: flex;
+    background-color: gainsboro;
+    height: 74px;
+}
+
+.logo{
+    display: flex;
+}
+
+.logoname{
+    margin: 25px 5px;
+}
+
+/* .navigation{
+    display: flex;
+    margin: 26px 225px;
+}
+
+.navigation li{
+    display: inline-block;
+    margin: 3px 9px;
+} */
+
+.index{
+    position: absolute;
+    left: 375px;
+    margin: 9px -5px;
+
+    /* margin: 8px 135px; */
+}
+
+.index a{
+    font-size: inherit;
+    color: black;
+}
+.link{
+    text-decoration: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: inherit;
+    margin: 20px 35px;
+}
+
+.dropdown-1{
+    position: relative;
+} 
+
+.dropdown_menu-1{
+    position: absolute;
+    display: flex;
+    left: -281px;
+    top: calc(100% + .25rem);
+    padding: 0.75rem;
+    box-shadow: 0px 5px 5px 0px rgb(0 0 0 / 20%);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    z-index: 0;
+    pointer-events: none;
+    /* box-sizing: ; */
+}
+
+.dropdown-1 > .link:focus + .dropdown_menu-1{
+    z-index: 1;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(10px);
+}
+
+.discover{
+    margin: 15px 0;
+}
+
+.discover a{
+    display: block;
+    font-size: 1rem;
+    padding: 11px 3px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 6px 0px;
+    border: 2px solid white;
+    border-radius: 4px;
+}
+#discover pre{
+    letter-spacing: .3rem;
+    color: darkgrey;
+    padding: 2px 3px;
+    margin: 6px 0;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* .wallet a:hover{
+    color: blue;
+} */
+
+.discover a:hover{
+    /* border: 2px solid rgb(214, 212, 212); */
+    color: blue;
+    background-color: rgb(239, 239, 239);
+    border-radius: 4px;
+    transition: background-color .2s ease-in-out;
+}
+.dropdown_menu-1 div{
+    display: inline-block;
+    /* display: flex; */
+    padding: 5px 3px;
+    margin: 5px 8px;
+}
+
+#guides{
+    margin: 4px 17px;
+    padding: 6px 8px;
+    position: relative;
+    top: 0px;
+}
+
+#guides pre{
+    letter-spacing: .3rem;
+    color: darkgrey;
+    padding: 2px 3px;
+    margin: 6px 0;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.wallet_guide {
+    /* display: block; */
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-top: 9px;
+    border: 2px solid white;
+    border-radius: 4px;
+}
+
+.wallet_guide:hover , .wallet_link-1:hover{
+    /* color: blue; */
+    border-radius: 4px;
+    background-color: rgb(239, 239, 239);
+    transition:  .2s ease-in;
+}
+
+.wallet_guide a{
+    display: block;
+    margin-top: 14px;
+}
+
+.wallet_link-1:hover{
+    color: blue;
+}
+
+.wallet_link-1{
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    /* border: 2px solid grey;
+    border-radius: 4px; */
+}
+
+/* .wallet_link-1:hover{
+    color: blue;
+} */
+
+.wallet_link-2{
+    font-size: 0.9rem;
+    text-decoration: none;
+    position: relative;
+    top: -14px;
+    /* border: 2px solid grey;
+    border-radius: 4px; */
+}
+
+#wallet{
+    margin: 3px 0px;
+}
+
+#wallet pre{
+    letter-spacing: .3rem;
+    color: darkgrey;
+    padding: 2px 3px;
+    margin: 2px 0;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* .b_wallet{
+    margin: 2px 3px;
+    padding: 2px 2px;
+} */
+
+.a_wallet p{
+    display: flex;
+    margin: 9px 6px;
+    cursor: pointer;
+}
+
+.a_wallet p:hover{
+    color: blue;
+    border-radius: 4px;
+    background-color: rgb(239, 239, 239);
+    transition:  .4s ease-in;
+}
+
+.a_wallet p img{
+    margin: 9px 2px;
+    padding: 4px 2px;
+    height: 37px;
+    width: 59px;
+}
+
+.a_wallet p a{
+    margin: 18px 2px;
+    padding: 5px 2px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.extension{
+    display: flex;
+}
+
+.extension a{
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    /* top: -11px; */
+}
+.ext-1 p{
+    margin: 9px -17px;
+    padding: 9px 3px;
+    cursor: pointer;
+}
+
+/* .ext-1 p img{
+    margin: 2px 2px;
+    padding: 2px 2px;
+    height: 25px;
+    width: 31px;
+}
+
+.ext-1 .chrome img{
+    height: 26px;
+    width: 31px;
+}
+
+.ext-1 .firefox img{
+    height: 30px;
+    width: 51px;
+}
+
+.ext-1 .firefox a{
+    position: relative;
+    right: 11px;
+    top: -14px;
+}
+
+.ext-1 .firefox {
+    position: relative;
+    right: 10px;
+    top: -4px;    
+}
+
+.ext-1 .ios {
+    position: relative;
+    top: -8px;
+}
+
+.ext-1 .android {
+    position: relative;
+    top: -8px;
+}
+
+.ext-1 .windows {
+    position: relative;
+    top: -8px;
+} */
+
+.extension p:hover, .extension a:hover{
+    /* color: blue; */
+    border-radius: 4px;
+    background-color: rgb(239, 239, 239);
+    transition:  .2s ease-in;
+}
+
+.ext-2 p{
+    margin: 9px 23px;
+    padding: 9px 10px;
+    cursor: pointer;
+}
+
+.ext-2 p img{
+    margin: 2px 1px;
+    padding: 2px 2px;
+    height: 25px;
+
+}
+
+.ext-2{
+    position: absolute;
+    margin: 2px 3px;
+    padding: 2px 3px;    
+}
+
+.chrome_link{
+    margin: 1px 3px;
+    padding: 1px 3px;
+}
+
+.fox_link{
+    margin: 1px 3px;
+    padding: 1px 3px;
+}
+
+.ios_link{
+    margin: 1px 3px;
+    padding: 1px 3px;
+}
+
+.android_link{
+    margin: 1px 3px;
+    padding: 1px 3px;
+}
+
+.windows_link{
+    margin: 1px 3px;
+    padding: 1px 3px;
+}
+
+.mac_link{
+    margin: 1px 3px;
+    padding: 1px 3px;
+}
+
+.intel_link{
+    margin: 1px 3px;
+    padding: 1px 3px;
+}
+
+.linux_link{
+    margin: 1px 3px;
+    padding: 1px 3px;
+}
+
+.wallet_link{
+    margin: 1px 3px;
+    padding: 1px 3px;
+}
+
+
+/* .ext-2 .mac img{
+    height: 24px;
+    width: 23px;
+}
+
+.ext-2 .mac a{
+    padding: 0 2px;
+}
+
+.ext-2 .intel img{
+    height: 25px;
+    width: 24px;
+}
+
+.ext-2 .linux img{
+    height: 25px;
+    width: 24px;
+} */
+
+.index-2{
+    position: absolute;
+    left: 475px;
+    margin: 9px -5px;
+}
+
+.dropdown-2{
+    position: relative;
+} 
+
+.dropdown_menu-2{
+    position: absolute;
+    display: flex;
+    left: -281px;
+    top: calc(100% + .25rem);
+    padding: 0.75rem;
+    box-shadow: 0px 5px 5px 0px rgb(0 0 0 / 20%);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.dropdown-2 > .link:focus + .dropdown_menu-2{
+    z-index: 1;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(10px);
+}
+
+.developers{
+    margin: 5px 21px;
+    padding: 7px 12px;
+}
+
+.developers pre{
+    letter-spacing: .3rem;
+    color: darkgrey;
+    padding: 2px 3px;
+    margin: 2px 0;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.documentation{
+    margin: 10px 1px;
+    padding: 7px 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.documentation a{
+    margin: 5px 3px;
+    padding: 8px 2px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.03rem;
+}
+
+.tutorials{
+    margin: 5px 21px;
+    padding: 7px 12px;
+}
+
+.tutorials pre{
+    letter-spacing: .3rem;
+    color: darkgrey;
+    padding: 2px 3px;
+    margin: 2px 0;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.academy_link, .intro_link{
+    margin: 5px 3px;
+    padding: 3px 2px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.03rem;
+}
+
+.tutorials div p{
+    cursor: pointer;
+    font-size: .88rem;
+    margin: 2px 3px;
+    padding: 1px 3px;
+}
+
+.tutorials div{
+    margin: 18px 5px;
+    padding: 5px 2px;
+    cursor: pointer;
+}
+
+.tutorials a:hover{
+    color: blue;
+}
+
+.tutorials div:hover{
+    border-radius: 4px;
+    background-color: rgb(239, 239, 239);
+    transition:  .4s ease-in;
+}
+
+.documentation a:hover{
+    color: blue;
+    border-radius: 4px;
+    background-color: rgb(239, 239, 239);
+    transition:  .2s ease-in;
+}
+
+.index-3{
+    position: absolute;
+    left: 575px;
+    margin: 9px -5px;
+}
+
+.dropdown-3{
+    position: relative
+}
+
+.dropdown_menu-3{
+    position: absolute;
+    display: flex;
+    left: -550px;
+    top: calc(100% + .25rem);
+    padding: 0.75rem;
+    box-shadow: 0px 5px 5px 0px rgb(0 0 0 / 20%);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.dropdown-3 > .link:focus + .dropdown_menu-3{
+    z-index: 1;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(10px);
+}
+
+.analytics{
+    margin: 5px 21px;
+    padding: 7px 12px;
+}
+
+.explorers{
+    margin: 5px 21px;
+    padding: 7px 12px;
+}
+
+.validators{
+    margin: 5px 21px;
+    padding: 7px 12px;
+}
+
+.bridges{
+    margin: 5px 21px;
+    padding: 7px 12px;
+}
+
+.dropdown_menu-3 a{
+    margin: 16px 3px;
+    padding: 9px 7px;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    font-size: 1.03rem;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    /* display: block; */
+}
+
+.explorers a{
+    margin: 16px 6px;
+    padding: 10px 5px;
+    /* padding-bottom: 60px;
+    padding-right: 110px; */
+}
+
+.explorers p{
+    position: relative;
+    bottom: 23px;
+    left: 5px;    
+    border-radius: 2px solid red;
+}
+
+.validators  div{
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown_menu-3 pre{
+    letter-spacing: .3rem;
+    color: darkgrey;
+    padding: 2px 3px;
+    margin: 2px 0;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.dropdown_menu-3 p{
+    cursor: pointer;
+    font-size: .88rem;
+    margin: 2px 3px;
+    padding: 1px 3px;
+    border-radius: 2px solid red;
+
+}
+
+.validators div a{
+    display: block;
+    position: relative;
+    top: 7px;
+    margin: 8px 4px;
+    padding: 8px 6px;
+    cursor: pointer;
+}
+
+.bridges a{
+    padding-bottom: 13px;
+}
+
+.bridges p{
+    position: relative;
+    bottom: 26px;
+    left: 5px;
+    cursor: pointer;
+    border-radius: 2px solid red;
+}
+
+/* .dropdown_menu-3 a:hover {
+    color: blue;
+    border-radius: 4px;
+    background-color: rgb(239, 239, 239);
+    transition:  150ms ease-in;
+} */
+
+.analytics div a:hover{
+    color: blue;
+    border-radius: 4px;
+    background-color: rgb(239, 239, 239);
+    transition: .2s ease-in-out;
+}
+
+.validators div a:hover{
+    color: blue;
+    border-radius: 4px;
+    background-color: rgb(239, 239, 239);
+    transition: .2s ease-in-out;
+}
+
+.explorers div:hover{
+    border-radius: 4px;
+    background-color: rgb(239, 239, 239);
+    transition: .2s ease-in-out;
+}
+.explorers div a:hover{
+    color: blue;
+}
+
+.bridges div:hover{
+    border-radius: 4px;
+    background-color: rgb(239, 239, 239);
+    transition: .2s ease-out;
+}
+.bridges div a:hover{
+    color: blue;
+}
+
+.index-4{
+    position: absolute;
+    left: 686px;
+    margin: 9px -5px;
+}
+
+.dropdown-4{
+    position: relative
+}
+
+.dropdown_menu-4{
+    position: absolute;
+    display: flex;
+    left: -450px;
+    top: calc(100% + .25rem);
+    padding: 0.75rem;
+    box-shadow: 0px 5px 5px 0px rgb(0 0 0 / 20%);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.dropdown-4 > .link:focus + .dropdown_menu-4{
+    z-index: 1;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(10px);
+}
+
+.bounties{
+    margin: 4px 21px;
+    padding: 4px 15px;
+}
+
+.socials{
+    margin: 4px 21px;
+    padding: 4px 15px;
+}
+
+.dropdown_menu-4 a{
+    margin: 16px 3px;
+    padding: 9px 7px;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    font-size: 1.03rem;
+}
+
+.dropdown_menu-4 pre{
+    letter-spacing: .3rem;
+    color: darkgrey;
+    padding: 2px 3px;
+    margin: 2px 0;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.dropdown_menu-4 p{
+    position: relative;
+    left: 10px;
+    top: 3px;
+}
+
+.bounties div{
+    margin: 8px 1px;
+    padding: 8px 2px;
+}
+
+.bounties div:hover{
+    border-radius: 4px;
+    background-color: rgb(239, 239, 239);
+    transition: .2s ease-out;
+}
+
+.bounties a:hover{
+    color: blue;
+}
+
+.community{
+    display: flex;
+    margin: 8px -2px;
+    padding: 8px 0px;
+}
+
+.community-1 div, .community-2 div{
+    margin: 8px 14px;
+    padding: 9px 6px;
+}
+
+.community-1 div:hover, .community-2 div:hover{
+    border-radius: 4px;
+    background-color: rgb(239, 239, 239);
+    transition: .2s ease-out;
+}
+
+#logo_name:hover{
+    color: blue;
+}
+
+/* .socials a:hover{
+    color: blue;
+}
+.medium:hover > .medium_i_link{
+    color: black;
+} */
+
+.index-5{
+    position: absolute;
+    left: 845px;
+    margin: 28px 8px;
+}
+
+.index-5 a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+
+}
+
+.index-6{
+    position: absolute;
+    left: 86%;
+    top: 5%;
+    transform: translate(-50%, -50%);
+    background: rgb(76, 75, 75);
+    height: 30px;
+    border-radius: 40px;
+    padding: 10px 24px;
+}
+
+.index-6:hover > .search_txt{
+    width: 300px;
+    padding: 0 6px;
+}
+
+.index-6:hover > .search_btn{
+    background: white;
+}
+
+.search_btn{
+    color: #fff;
+    text-decoration: none;
+    float: right;
+    width: 0px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+
+.search_txt{
+    color: white;
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    font-size: .9rem;
+    transition: .4s;
+    line-height: 32px;
+    width: 0px;
+}
+
+

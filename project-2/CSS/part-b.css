@@ -1,0 +1,112 @@
+.index-2{
+    position: absolute;
+    left: 475px;
+    margin: 9px -5px;
+}
+
+.dropdown-2{
+    position: relative;
+} 
+
+.dropdown_menu-2{
+    position: absolute;
+    display: flex;
+    left: -281px;
+    top: calc(100% + .25rem);
+    padding: 0.75rem;
+    box-shadow: 0px 5px 5px 0px rgb(0 0 0 / 20%);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    z-index: 0;
+    /* box-sizing: ; */
+}
+
+.dropdown-2 > .link:focus + .dropdown_menu-2{
+    z-index: 1;
+    opacity: 1;
+    transform: translateY(10px);
+}
+
+.developers{
+    margin: 5px 21px;
+    padding: 7px 12px;
+}
+
+.developers pre{
+    letter-spacing: .3rem;
+    color: darkgrey;
+    padding: 2px 3px;
+    margin: 2px 0;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.documentation{
+    margin: 10px 1px;
+    padding: 7px 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.documentation a{
+    margin: 5px 3px;
+    padding: 8px 2px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.03rem;
+}
+
+.tutorials{
+    margin: 5px 21px;
+    padding: 7px 12px;
+}
+
+.tutorials pre{
+    letter-spacing: .3rem;
+    color: darkgrey;
+    padding: 2px 3px;
+    margin: 2px 0;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.academy_link, .intro_link{
+    margin: 5px 3px;
+    padding: 3px 2px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.03rem;
+}
+
+.tutorials div p{
+    cursor: pointer;
+    font-size: .88rem;
+    margin: 2px 3px;
+    padding: 1px 3px;
+}
+
+.tutorials div{
+    margin: 18px 5px;
+    padding: 5px 2px;
+    cursor: pointer;
+}
+
+.tutorials a:hover{
+    color: blue;
+}
+
+.tutorials div:hover{
+    border-radius: 4px;
+    background-color: rgb(239, 239, 239);
+    transition:  150ms ease-in;
+}
+
+.documentation a:hover{
+    color: blue;
+    border-radius: 4px;
+    background-color: rgb(239, 239, 239);
+    transition:  150ms ease-in;
+}
